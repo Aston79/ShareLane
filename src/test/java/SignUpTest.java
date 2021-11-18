@@ -317,19 +317,15 @@ public class SignUpTest {
     @Test
     public void zipCodeShouldAcceptMostCommonlyUsed10() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
-//        Открытие страницы https://www.sharelane.com/cgi-bin/register.py
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.sharelane.com/cgi-bin/register.py");
-//        Ввести - zip_code в строку zip_code
         WebElement zipCodeInput = driver.findElement(By.name("zip_code"));
         zipCodeInput.sendKeys("zip_code");
-//        Нажать кнопку Continue (Без использования в методе WebElement continueButton=)
         driver.findElement(By.cssSelector("[value = Continue]")).click();
-//        Убедиться что мы не перешли на страницу SignUp в связи с ошибкой
         boolean isDisplayed = driver.findElement(By.cssSelector(".error_message")).isDisplayed();
         Assert.assertTrue(isDisplayed, "***BUG!***");
-//        Закрыть браузер
         driver.quit();
     }
+
 }
 
