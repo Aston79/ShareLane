@@ -14,7 +14,7 @@ public class SignUpTest {
         driver.get("https://www.sharelane.com/cgi-bin/register.py");
         driver.findElement(By.name("zip_code")).sendKeys("12345");
         driver.findElement(By.cssSelector("[value = Continue]")).click();
-        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "***BUG!***");
+        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "Сообщение об ошибке не соответствует требованиям");
         driver.quit();
     }
 
@@ -25,7 +25,7 @@ public class SignUpTest {
         driver.get("https://www.sharelane.com/cgi-bin/register.py");
         driver.findElement(By.name("zip_code")).sendKeys("123456");
         driver.findElement(By.cssSelector("[value = Continue]")).click();
-        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "***BUG!***");
+        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "Сообщение об ошибке не соответствует требованиям");
         driver.quit();
     }
 
@@ -36,7 +36,7 @@ public class SignUpTest {
         driver.get("https://www.sharelane.com/cgi-bin/register.py");
         driver.findElement(By.name("zip_code")).sendKeys("1234");
         driver.findElement(By.cssSelector("[value = Continue]")).click();
-        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "***BUG!***");
+        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "Сообщение об ошибке не соответствует требованиям");
         driver.quit();
     }
 
@@ -47,7 +47,7 @@ public class SignUpTest {
         driver.get("https://www.sharelane.com/cgi-bin/register.py");
         driver.findElement(By.name("zip_code")).sendKeys("");
         driver.findElement(By.cssSelector("[value = Continue]")).click();
-        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "***BUG!***");
+        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "Сообщение об ошибке не соответствует требованиям");
         driver.quit();
     }
 
@@ -58,7 +58,7 @@ public class SignUpTest {
         driver.get("https://www.sharelane.com/cgi-bin/register.py");
         driver.findElement(By.name("zip_code")).sendKeys("abcde");
         driver.findElement(By.cssSelector("[value = Continue]")).click();
-        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "***BUG!***");
+        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "Сообщение об ошибке не соответствует требованиям");
         driver.quit();
     }
 
@@ -69,7 +69,7 @@ public class SignUpTest {
         driver.get("https://www.sharelane.com/cgi-bin/register.py");
         driver.findElement(By.name("zip_code")).sendKeys("абвгд");
         driver.findElement(By.cssSelector("[value = Continue]")).click();
-        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "***BUG!***");
+        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "Сообщение об ошибке не соответствует требованиям");
         driver.quit();
     }
 
@@ -80,7 +80,7 @@ public class SignUpTest {
         driver.get("https://www.sharelane.com/cgi-bin/register.py");
         driver.findElement(By.name("zip_code")).sendKeys("№%?_+");
         driver.findElement(By.cssSelector("[value = Continue]")).click();
-        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "***BUG!***");
+        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "Сообщение об ошибке не соответствует требованиям");
         driver.quit();
     }
 
@@ -91,7 +91,7 @@ public class SignUpTest {
         driver.get("https://www.sharelane.com/cgi-bin/register.py");
         driver.findElement(By.name("zip_code")).sendKeys("     ");
         driver.findElement(By.cssSelector("[value = Continue]")).click();
-        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "***BUG!***");
+        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "Сообщение об ошибке не соответствует требованиям*");
         driver.quit();
     }
 
@@ -102,7 +102,7 @@ public class SignUpTest {
         driver.get("https://www.sharelane.com/cgi-bin/register.py");
         driver.findElement(By.name("zip_code")).sendKeys("qwerty");
         driver.findElement(By.cssSelector("[value = Continue]")).click();
-        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "***BUG!***");
+        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "Сообщение об ошибке не соответствует требованиям");
         driver.quit();
     }
 
@@ -113,7 +113,7 @@ public class SignUpTest {
         driver.get("https://www.sharelane.com/cgi-bin/register.py");
         driver.findElement(By.name("zip_code")).sendKeys("1q2w3e");
         driver.findElement(By.cssSelector("[value = Continue]")).click();
-        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "***BUG!***");
+        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "Сообщение об ошибке не соответствует требованиям");
         driver.quit();
     }
 
@@ -124,7 +124,7 @@ public class SignUpTest {
         driver.get("https://www.sharelane.com/cgi-bin/register.py");
         driver.findElement(By.name("zip_code")).sendKeys("11111");
         driver.findElement(By.cssSelector("[value = Continue]")).click();
-        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "***BUG!***");
+        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "Сообщение об ошибке не соответствует требованиям");
         driver.quit();
     }
 
@@ -135,7 +135,7 @@ public class SignUpTest {
         driver.get("https://www.sharelane.com/cgi-bin/register.py");
         driver.findElement(By.name("zip_code")).sendKeys("0987654321");
         driver.findElement(By.cssSelector("[value = Continue]")).click();
-        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "***BUG!***");
+        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "Сообщение об ошибке не соответствует требованиям");
         driver.quit();
     }
 
@@ -146,7 +146,7 @@ public class SignUpTest {
         driver.get("https://www.sharelane.com/cgi-bin/register.py");
         driver.findElement(By.name("zip_code")).sendKeys("qwerty123");
         driver.findElement(By.cssSelector("[value = Continue]")).click();
-        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "***BUG!***");
+        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "Сообщение об ошибке не соответствует требованиям");
         driver.quit();
     }
 
@@ -157,7 +157,7 @@ public class SignUpTest {
         driver.get("https://www.sharelane.com/cgi-bin/register.py");
         driver.findElement(By.name("zip_code")).sendKeys("00000");
         driver.findElement(By.cssSelector("[value = Continue]")).click();
-        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "***BUG!***");
+        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "Сообщение об ошибке не соответствует требованиям");
         driver.quit();
     }
 
@@ -168,7 +168,7 @@ public class SignUpTest {
         driver.get("https://www.sharelane.com/cgi-bin/register.py");
         driver.findElement(By.name("zip_code")).sendKeys("0000000000");
         driver.findElement(By.cssSelector("[value = Continue]")).click();
-        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "***BUG!***");
+        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "Сообщение об ошибке не соответствует требованиям");
         driver.quit();
     }
 
@@ -179,7 +179,7 @@ public class SignUpTest {
         driver.get("https://www.sharelane.com/cgi-bin/register.py");
         driver.findElement(By.name("zip_code")).sendKeys("1234567890");
         driver.findElement(By.cssSelector("[value = Continue]")).click();
-        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "***BUG!***");
+        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "Сообщение об ошибке не соответствует требованиям");
         driver.quit();
     }
 
@@ -190,7 +190,7 @@ public class SignUpTest {
         driver.get("https://www.sharelane.com/cgi-bin/register.py");
         driver.findElement(By.name("zip_code")).sendKeys("йцукен");
         driver.findElement(By.cssSelector("[value = Continue]")).click();
-        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "***BUG!***");
+        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "Сообщение об ошибке не соответствует требованиям");
         driver.quit();
     }
 
@@ -201,7 +201,7 @@ public class SignUpTest {
         driver.get("https://www.sharelane.com/cgi-bin/register.py");
         driver.findElement(By.name("zip_code")).sendKeys("zip_code");
         driver.findElement(By.cssSelector("[value = Continue]")).click();
-        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "***BUG!***");
+        Assert.assertTrue(driver.findElement(By.cssSelector("[value = Register]")).isDisplayed(), "Сообщение об ошибке не соответствует требованиям");
         driver.quit();
     }
 
